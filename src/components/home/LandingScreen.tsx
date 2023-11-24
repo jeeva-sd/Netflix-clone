@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { pageAssets } from '~/contents/PageContents';
 
@@ -5,8 +6,10 @@ const LandingScreen: React.FC = () => {
     return (
         <React.Fragment>
             <div className='overflow-hidden w-full h-[85vh] -mt-10'>
-                <img
+                <Image
                     alt='landingPageBgUrl'
+                    width={200}
+                    height={200}
                     src={pageAssets.landingPageBgUrl}
                     className='object-cover scale-125 -translate-y-[10%] h-full w-full ' />
                 <div

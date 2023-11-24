@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     if (!isIntroPlayed) setTimeout(() => setNetflixPromo(false), 2000);
     dispatch(updateIntro());
-  }, []);
+  }, [isIntroPlayed]);
 
   return (
     <React.Fragment>

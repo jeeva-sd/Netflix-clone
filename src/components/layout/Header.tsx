@@ -5,15 +5,15 @@ import React, { useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import netflixLogo from '~/assets/netflix-logo.png';
 
+const navs: any[] = [
+    { title: 'Home', path: '/', selected: false, beta: false },
+    { title: 'Trending', path: '/trending', selected: false, beta: true },
+    { title: 'Watchlist', path: '/watchlist', selected: false, beta: false }
+];
+
 const Header: React.FC = () => {
     const { push } = useRouter();
     const pathname = usePathname();
-
-    const navs: any[] = [
-        { title: 'Home', path: '/', selected: false, beta: false },
-        { title: 'Trending', path: '/trending', selected: false, beta: true },
-        { title: 'Watchlist', path: '/watchlist', selected: false, beta: false }
-    ];
 
     const sideBarNavs = useMemo(() => {
         return navs.map((nav: any) => {

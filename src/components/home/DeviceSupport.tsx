@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { pageAssets } from '~/contents/PageContents';
 
@@ -12,7 +13,9 @@ const DeviceSupport = () => {
                     </p>
                 </div>
                 <div className='relative flex justify-center mb-20 mt-20'>
-                    <img
+                    <Image
+                        height={200}
+                        width={200}
                         src={pageAssets.deviceSupportImage}
                         alt=''
                         className='w-[90%] z-10 relative'

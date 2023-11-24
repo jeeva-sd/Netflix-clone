@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import { pageAssets } from '~/contents/PageContents';
@@ -7,10 +8,16 @@ const SecctionOne = () => {
         <React.Fragment>
             <div className='lg:h-[43.75rem] md:h-auto md:py-28 w-full flex items-center justify-evenly flex-wrap-reverse'>
                 <div className='relative flex justify-center'>
-                    <img src={pageAssets.downloadPageImageOne} alt='downloadPageImageOne' className=' mx-auto mb-20 mt-20' />
+                    <Image
+                        width={200}
+                        height={200}
+                        src={pageAssets.downloadPageImageOne} alt='downloadPageImageOne' className=' mx-auto mb-20 mt-20' />
 
                     <div className='flex h-18 items-center justify-between border bg-black rounded-xl py-5 absolute w-8/12 bottom-28 pr-5'>
-                        <img src={pageAssets.downloadPageImageTwo}
+                        <Image
+                            width={200}
+                            height={200}
+                            src={pageAssets.downloadPageImageTwo}
                             className='w-[51px] h-18 ml-4' alt='' />
 
                         <h2 className='text-white'>Stranger Things <br />

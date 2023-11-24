@@ -1,14 +1,8 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off",
     "no-unused-vars": "error",
     "eqeqeq": "error",
-    "indent": [
-      "error",
-      4
-    ],
     "no-trailing-spaces": "error"
   }
 }

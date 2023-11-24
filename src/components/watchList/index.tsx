@@ -1,6 +1,5 @@
 import React from 'react';
 import MovieList from './WatchList';
-import Header from '../layout/Header';
 
 const TrendingMovieComp = () => {
     return (
