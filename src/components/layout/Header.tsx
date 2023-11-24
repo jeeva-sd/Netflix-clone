@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     const navs: any[] = [
         { title: 'Home', path: '/', selected: false, beta: false },
         { title: 'Trending', path: '/trending', selected: false, beta: true },
-        { title: 'Watch-list', path: '/watchlist', selected: false, beta: false }
+        { title: 'Watchlist', path: '/watchlist', selected: false, beta: false }
     ];
 
     const sideBarNavs = useMemo(() => {

@@ -8,12 +8,17 @@ import FAQ from '~/components/home/FAQ';
 import LandingScreen from '~/components/home/LandingScreen';
 import SecctionOne from '~/components/home/SecctionOne';
 import NetflixAnimation from "~/assets/netflix-animation.gif";
+import { updateIntro } from '~/state/reducers/common';
+import { dispatch } from '~/state/store';
+import { useSelector } from 'react-redux';
 
 export default function Home() {
-  const [NetflixPromo, setNetflixPromo] = useState(true);
+  const isIntroPlayed = useSelector((state: any) => state.common.introShown);
+  const [NetflixPromo, setNetflixPromo] = useState(!isIntroPlayed);
 
   useEffect(() => {
-    setTimeout(() => setNetflixPromo(false), 2000);
+    if (!isIntroPlayed) setTimeout(() => setNetflixPromo(false), 2000);
+    dispatch(updateIntro());
   }, []);
 
   return (
