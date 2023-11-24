@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { Inter } from 'next/font/google';
+import { Providers } from '~/state/store/Provider';
 import Header from '~/components/layout/Header';
 import Footer from '~/components/layout/Footer';
 import './globals.css';
@@ -17,7 +18,9 @@ const RootLayout = ({ children }: { children: React.ReactNode; }) => {
     <html lang='en'>
       <body className={inter.className}>
         <Header />
+        <Providers>
           {children}
+        </Providers>
         <Footer />
       </body>
     </html>
