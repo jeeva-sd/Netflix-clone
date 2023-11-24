@@ -19,7 +19,7 @@ const EnjoyBigScreen = () => {
                         height={650}
                         src={pageAssets.bigScreenImage}
                         alt=''
-                        className='z-10 relative' />
+                        className='z-10 relative w-full' />
                     <div className='absolute top-[20%] left-[18%] overflow-hidden'>
                         <video autoPlay playsInline muted loop>
                             <source

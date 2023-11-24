@@ -14,11 +14,11 @@ const DeviceSupport = () => {
                 </div>
                 <div className='relative flex justify-center mb-20 mt-20'>
                     <Image
-                        height={200}
-                        width={200}
+                        height={500}
+                        width={500}
                         src={pageAssets.deviceSupportImage}
                         alt=''
-                        className='w-[90%] z-10 relative'
+                        className=' z-10 relative w-full h-full'
                     />
                     <div className='absolute top-[12%] left-[19.5%] max-w-[60%] max-h-[55%] overflow-hidden'>
                         <video autoPlay playsInline muted loop>
